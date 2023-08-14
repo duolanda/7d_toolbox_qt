@@ -40,7 +40,7 @@
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>音视频合并</string>
+           <string>音视频混流</string>
           </property>
          </widget>
         </item>
@@ -54,10 +54,10 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit"/>
+           <widget class="QLineEdit" name="mix_video_path"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="mix_video_button">
             <property name="text">
              <string>浏览</string>
             </property>
@@ -75,10 +75,10 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2"/>
+           <widget class="QLineEdit" name="mix_audio_path"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="mix_audio_button">
             <property name="text">
              <string>浏览</string>
             </property>
@@ -96,16 +96,23 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_3"/>
+           <widget class="QLineEdit" name="mix_output_path"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QPushButton" name="mix_output_button">
             <property name="text">
              <string>浏览</string>
             </property>
            </widget>
           </item>
          </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="mix_button">
+          <property name="text">
+           <string>合并</string>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="Line" name="line">
@@ -130,7 +137,7 @@
         <item>
          <widget class="QLabel" name="label_5">
           <property name="text">
-           <string>flv mkv 转封装为 mp4</string>
+           <string>flv mkv 转封装为 mp4（可能会失败）</string>
           </property>
          </widget>
         </item>
@@ -144,10 +151,10 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_4"/>
+           <widget class="QLineEdit" name="mux_src_path"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_4">
+           <widget class="QPushButton" name="mux_src_button">
             <property name="text">
              <string>浏览</string>
             </property>
@@ -165,16 +172,23 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_5"/>
+           <widget class="QLineEdit" name="mux_output_path"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_5">
+           <widget class="QPushButton" name="mux_output_button">
             <property name="text">
              <string>浏览</string>
             </property>
            </widget>
           </item>
          </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="mux_button">
+          <property name="text">
+           <string>转封装</string>
+          </property>
+         </widget>
         </item>
         <item>
          <spacer name="verticalSpacer_2">
